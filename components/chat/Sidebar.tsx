@@ -1,23 +1,21 @@
 import { AiMagicIcon, Edit02Icon, Search01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import React from "react";
-import { Button } from "../ui/button";
 
 const Sidebar = () => {
   return (
-    <div className="w-full bg-foreground/95 h-full p-4 relative">
+    <div className="w-full bg-foreground/95 h-full p-4 relative border border-muted/10">
       <div className="flex items-center gap-3">
         <HugeiconsIcon icon={AiMagicIcon} className="h-6 text-indigo-500" />{" "}
         <h2 className="text-lg font-semibold text-background/90">Brutal.AI</h2>
       </div>
 
       <div className="mt-8 space-y-2">
-        <div className="flex items-center text-background/80 gap-3 hover:bg-muted-foreground/20 h-9 px-2 rounded-lg text-sm cursor-pointer">
+        <div className="flex items-center text-background/80 gap-3 hover:bg-muted-foreground/20 h-9 px-3 rounded-xl text-sm cursor-pointer">
           <HugeiconsIcon icon={Edit02Icon} size={17} />
           New Chat
         </div>
 
-        <div className="flex items-center text-background/80 gap-3 hover:bg-muted-foreground/20 h-9 px-2 rounded-lg text-sm cursor-pointer">
+        <div className="flex items-center text-background/80 gap-3 hover:bg-muted-foreground/20 h-9 px-3 rounded-xl text-sm cursor-pointer">
           <HugeiconsIcon icon={Search01Icon} size={17} />
           Search Chats
         </div>
